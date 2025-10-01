@@ -54,32 +54,27 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
-    {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.citation and post.paperurl and post.slidesurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.citation and post.paperurl and post.bibtexurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.citation and post.paperurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
+    {% capture github_link %}{% if post.github %}<a href="{{ post.github }}">GitHub</a>{% endif %}{% endcapture %}
+    {% capture download_links %}
+      {% if post.paperurl %}<a href=" {{ post.paperurl }} ">Download Paper</a>{% endif %}
+      {% if post.paperurl and post.bibtexurl %} | {% endif %}
+      {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}">Download Bibtex</a>{% endif %}
+      {% if (post.paperurl or post.bibtexurl) and post.slidesurl %} | {% endif %}
+      {% if post.slidesurl %}<a href="{{ post.slidesurl }}">Download Slides</a>{% endif %}
+      {% if (post.paperurl or post.bibtexurl or post.slidesurl) and post.github %} | {% endif %}
+      {% if post.github %}<a href="{{ post.github }}">GitHub</a>{% endif %}
+    {% endcapture %}
+
+    {% if post.citation and (post.paperurl or post.bibtexurl or post.slidesurl or post.github) %}
+      <p>Recommended citation: {{ post.citation }}<br />{{ download_links | strip }}</p>
+    {% elsif post.citation %}
+      <p>Recommended citation: {{ post.citation }}</p>
+    {% elsif download_links contains 'href' %}
+      <p>{{ download_links | strip }}</p>
     {% elsif post.citation and post.slidesurl and post.bibtexurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl}}">Download Bibtex</a></p>
     {% elsif post.citation and post.slidesurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.citation and post.bibtexurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }}</p>
-    {% elsif post.paperurl and post.bibtexurl %}
-      <p><a href=" {{ post.paperurl }} ">Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.paperurl %}
-      <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
-    {% elsif post.slidesurl and post.bibtexurl %}
-      <p><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.slidesurl %}
-      <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.bibtexurl %}
-      <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% endif %}
 
   </article>
