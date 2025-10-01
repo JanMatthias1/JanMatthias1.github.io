@@ -66,6 +66,12 @@
   }
 }
 
+.archive__item-meta {
+  margin: 0 0 0.25rem;
+  font-size: $type-size-6;
+  color: var(--body-muted-text);
+}
+
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;
