@@ -1,14 +1,11 @@
 ---
-title: "Paper Title Number 2"
+title: "FIP200 recruits ATG16L1 to the autophagosome via its CLAW domain"
 collection: publications
-category: manuscripts
-permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
+category: Master Thesis
+permalink: https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/734398/Jan_Master_thesis_upload-4.pdf?sequence=8
+excerpt: 'Dysregulation of autophagy, a critical cellular process for degrading and recycling cellular components, is linked to aging and various neurodegenerative diseases. The Unc-51-like kinase complex with three additional proteins, FIP200, ATG101, and ATG13, plays a critical role for autophagy initiation. While FIP200’s CLAW domain is one of the most conserved regions across species, its exact function remains unclear. We identified that upon CLAW domain deletion and charge inversion, ATG13 and FIP200 co- localization is diminished. Subsequent immunoprecipitation analysis coupled with proteomic analysis revealed significant depletion of the ATG12-ATG5-ATG16L1 complex in the CLAW deletion and charge inversion conditions. Our findings demonstrate that in vivo, ATG16L1 interacts with a cluster of positively-charged residues on the surface of the FIP200 CLAW domain. This represents a possible mechanism by which ATG16L1 is recruited to the nascent phagophore. ATG16L1 plays an essential role in membrane LC3 lipidation, a vital process for proper autophagosome expansion, cargo recruitment and membrane closure.'
 date: 2010-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+venue: 'Research Collection ETHZ'
 ---
 
 The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
