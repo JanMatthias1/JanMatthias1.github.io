@@ -182,7 +182,7 @@
 
   a {
     display: block;
-    margin: 0 1rem;
+    margin: 0;
     padding: 0.5rem 0;
     color: #fff;
     text-decoration: none;
@@ -192,24 +192,11 @@
     }
   }
 
-  button {
-    position: absolute;
-    height: 2.5rem;
-    right: 0;
-    padding: 0 0.5rem;
-    border: 0;
-    outline: none;
-    background-color: rgba(#fff, 0.2);
-    color: #fff;
-    cursor: pointer;
-    z-index: 100;
-  }
-
   .visible-links {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.25rem;
 
     li {
       display: flex;
@@ -219,25 +206,6 @@
       &:first-child {
         font-weight: bold;
         text-wrap: wrap;
-
-        a {
-          margin-left: 0;
-        }
-      }
-
-      &:last-child {
-        a {
-          margin-right: 0;
-        }
-      }
-    }
-
-    #theme-toggle {
-      a {
-        width: 25px;
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
       }
     }
 

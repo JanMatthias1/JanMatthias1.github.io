@@ -107,6 +107,76 @@
   }
 }
 
+.home-page .sidebar {
+  text-align: center;
+
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    position: static;
+    height: auto;
+    padding-top: 0;
+  }
+
+  @include breakpoint($large) {
+    float: none;
+    max-width: 320px;
+  }
+
+  @include breakpoint($x-large) {
+    max-width: 360px;
+  }
+}
+
+.home-page .sidebar .author__avatar {
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+.home-page .sidebar .author__avatar img {
+  max-width: 210px;
+  padding: 8px;
+}
+
+.home-page .sidebar .author__content {
+  display: block;
+  padding: 0;
+  margin: 0 auto 1rem;
+  text-align: center;
+}
+
+.home-page .sidebar .author__name {
+  font-size: $type-size-4;
+}
+
+.home-page .sidebar .author__bio {
+  font-size: $type-size-5;
+  line-height: 1.6;
+}
+
+.home-page .sidebar .author__urls-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-page .sidebar .author__urls-wrapper button {
+  display: none;
+}
+
+.home-page .sidebar .author__urls {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.home-page .sidebar .author__urls li {
+  margin: 0;
+}
+
 .author__content {
   display: table-cell;
   vertical-align: top;

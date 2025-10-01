@@ -11,7 +11,12 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body>
+  {% capture body_class %}
+    {% if page.layout %}layout--{{ page.layout }}{% endif %}
+    {% if page.classes %} {{ page.classes }}{% endif %}
+  {% endcapture %}
+
+  <body{% unless body_class == blank %} class="{{ body_class | strip }}"{% endunless %}>
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}
