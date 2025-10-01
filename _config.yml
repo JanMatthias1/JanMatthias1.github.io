@@ -23,10 +23,10 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "/images/profile.png"
   name             : "Jan Matthias"
   pronouns         : # example: "she/her"  
-  bio              : #"Short biography for the left-hand sidebar"
+  bio              : "1st Year PhD student at the Johns Hopkins University"
   location         : "Baltimore"
   employer         : "Johns Hopkins University"
   uri              : # URL
