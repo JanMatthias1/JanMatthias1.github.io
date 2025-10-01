@@ -1,0 +1,9 @@
+# Example visitor counts by location. Replace these with real analytics exports.
+- name: "Baltimore, USA"
+  latitude: 39.2904
+  longitude: -76.6122
+  count: 12
+- name: "Zurich, Switzerland"
+  latitude: 47.3769
+  longitude: 8.5417
+  count: 8

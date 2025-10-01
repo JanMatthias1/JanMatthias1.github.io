@@ -84,6 +84,28 @@
     }
   }
 
+  .visitor-map {
+    margin: 2rem 0 1rem;
+    width: 100%;
+    height: 320px;
+    border: 1px solid var(--global-border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--global-bg-color);
+  }
+
+  .visitor-map__message {
+    margin: 0;
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--body-muted-text);
+  }
+
+  .visitor-map__note {
+    margin-top: -0.5rem;
+    color: var(--body-muted-text);
+  }
+
   dt {
     margin-top: 1em;
     font-family: $sans-serif;

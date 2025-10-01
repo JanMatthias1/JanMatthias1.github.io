@@ -26,16 +26,15 @@
           alt="">
       </div>
     {% endif %}
-    <h3 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-      {% endif %}
-    </h3>
-    {% if post.date %}<p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
-    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{post.type}} at {{ post.venue }},  {{post.location}}</p>{% endif %}
+    <h3 class="archive__item-title" itemprop="headline">{{ title }}</h3>
+    {% assign has_meta = post.venue or post.location or post.date %}
+    {% if has_meta %}
+      <p class="archive__item-meta">
+        {% if post.venue %}<span class="archive__item-venue">{{ post.venue }}</span>{% endif %}
+        {% if post.location %}{% if post.venue %} — {% endif %}<span class="archive__item-location">{{ post.location }}</span>{% endif %}
+        {% if post.date %}{% if post.venue or post.location %} · {% endif %}<span class="archive__item-date">{{ post.date | date: "%Y/%m/%d" }}</span>{% endif %}
+      </p>
+    {% endif %}
     </li>
   </article>
 </div>
-

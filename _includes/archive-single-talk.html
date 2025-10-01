@@ -26,11 +26,13 @@
       </div>
     {% endif %}
     <h2 class="archive__item-title" itemprop="headline">{{ title }}</h2>
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% assign has_meta = post.venue or post.location or post.date %}
+    {% if has_meta %}
+      <p class="archive__item-meta">
+        {% if post.venue %}<span class="archive__item-venue">{{ post.venue }}</span>{% endif %}
+        {% if post.location %}{% if post.venue %} — {% endif %}<span class="archive__item-location">{{ post.location }}</span>{% endif %}
+        {% if post.date %}{% if post.venue or post.location %} · {% endif %}<span class="archive__item-date">{{ post.date | date: '%B %d, %Y' }}</span>{% endif %}
+      </p>
     {% endif %}
-    {% if post.date %}<p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
-    {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}} {% endif %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
   </article>
 </div>
