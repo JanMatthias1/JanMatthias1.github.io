@@ -133,7 +133,7 @@
 }
 
 .home-page .sidebar .author__avatar img {
-  max-width: 256px;
+  max-width: min(70vw, 256px);
   padding: 10px;
 }
 
@@ -145,7 +145,7 @@
 }
 
 .home-page .sidebar .author__name {
-  font-size: $type-size-4;
+  font-size: $type-size-3;
 }
 
 .home-page .sidebar .author__bio {
@@ -181,7 +181,21 @@
 }
 
 .home-page .sidebar .author__urls a {
-  font-size: $type-size-6;
+  font-size: $type-size-5;
+}
+
+@include breakpoint($large) {
+  .home-page .sidebar .author__avatar img {
+    max-width: 256px;
+  }
+
+  .home-page .sidebar .author__name {
+    font-size: $type-size-4;
+  }
+
+  .home-page .sidebar .author__urls a {
+    font-size: $type-size-6;
+  }
 }
 
 .author__content {
