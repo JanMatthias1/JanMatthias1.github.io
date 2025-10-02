@@ -66,7 +66,6 @@
 }
 
 .home-page #main .sidebar {
-  order: 1;
   flex: 0 0 auto;
 
   @include breakpoint($large) {
@@ -81,7 +80,6 @@
 
 
 .home-page #main .page {
-  order: 2;
   width: 100%;
 
   @include breakpoint($large) {

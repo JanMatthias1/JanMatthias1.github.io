@@ -133,8 +133,8 @@
 }
 
 .home-page .sidebar .author__avatar img {
-  max-width: clamp(220px, 75vw, 320px);
-  padding: 10px;
+  max-width: 150px;
+  padding: 5px;
 }
 
 .home-page .sidebar .author__content {
@@ -190,7 +190,8 @@
 
 @include breakpoint($large) {
   .home-page .sidebar .author__avatar img {
-    max-width: 256px;
+    max-width: clamp(220px, 25vw, 320px);
+    padding: 10px;
   }
 
   .home-page .sidebar .author__name {
