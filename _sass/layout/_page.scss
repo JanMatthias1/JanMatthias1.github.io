@@ -51,16 +51,15 @@
 .home-page #main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 3rem;
   padding: 3.5rem 1.75rem 4rem;
 
   @include breakpoint($large) {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: center;
-    gap: 4.5rem;
-    max-width: 1120px;
+    gap: 4rem;
+    max-width: 1180px;
     margin: 0 auto;
   }
 }
@@ -68,6 +67,10 @@
 .home-page #main .sidebar {
   order: 2;
   flex: 0 0 auto;
+
+  @include breakpoint($large) {
+    flex: 0 0 360px;
+  }
 }
 
 .home-page #main .page {
@@ -75,13 +78,13 @@
   width: 100%;
 
   @include breakpoint($large) {
-    max-width: 680px;
-    flex: 1 1 0;
+    max-width: none;
+    flex: 1 1 680px;
   }
 }
 
 .home-page .page__inner-wrap {
-  max-width: 680px;
+  max-width: 720px;
   margin: 0 auto;
   padding: 0;
 }
