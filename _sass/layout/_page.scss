@@ -79,7 +79,7 @@
 
   @include breakpoint($large) {
     max-width: none;
-    flex: 1 1 2500px;
+    flex: 1 1 4000px;
     min-width: 0;
   }
 }
