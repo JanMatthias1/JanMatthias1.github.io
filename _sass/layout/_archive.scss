@@ -59,8 +59,8 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
-
+  font-size: 1rem;
+  
   & + p {
     text-indent: 0;
   }
@@ -74,7 +74,7 @@
 
 .archive__item-authors {
   margin: 0 0 0.75rem;
-  font-size: $type-size-6;
+  font-size: 1rem;
   color: var(--global-text-color);
 }
 
