@@ -79,7 +79,7 @@
 
   @include breakpoint($large) {
     max-width: none;
-    flex: 1 1 960px;
+    flex: 1 1 1200px;
     min-width: 0;
   }
 }
@@ -98,8 +98,8 @@
 
 .home-page .page__content {
   text-align: left;
-  font-size: clamp(0.72rem, 0.88vw, 0.84rem);
-  line-height: 1.4;
+  font-size: clamp(0.8rem, 1vw, 0.95rem);
+  line-height: 1.5;
   max-width: none;
 }
 
@@ -112,6 +112,12 @@
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid var(--global-border-color);
+  }
+
+  .page__authors {
+    margin: 0 0 1rem;
+    font-size: $type-size-6;
+    color: var(--body-muted-text);
   }
 
   p, li, dl {

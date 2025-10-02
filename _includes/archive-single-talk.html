@@ -38,6 +38,7 @@
         {% if post.venue %}<span class="archive__item-venue">{{ post.venue }}</span>{% endif %}
         {% if post.location %}{% if post.venue %} — {% endif %}<span class="archive__item-location">{{ post.location }}</span>{% endif %}
         {% if post.date %}{% if post.venue or post.location %} · {% endif %}<span class="archive__item-date">{{ post.date | date: '%B %d, %Y' }}</span>{% endif %}
+        {% if post.link %} · <a href="{{ post.link }}">Link</a>{% endif %}
       </p>
     {% endif %}
   </article>
