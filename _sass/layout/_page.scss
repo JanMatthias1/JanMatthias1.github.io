@@ -58,8 +58,8 @@
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
-    gap: 4rem;
-    max-width: 1180px;
+    gap: 4.5rem;
+    max-width: 1240px;
     margin: 0 auto;
   }
 }
@@ -69,7 +69,7 @@
   flex: 0 0 auto;
 
   @include breakpoint($large) {
-    flex: 0 0 360px;
+    flex: 0 0 400px;
   }
 }
 

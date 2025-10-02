@@ -118,11 +118,11 @@
 
   @include breakpoint($large) {
     float: none;
-    max-width: 320px;
+    max-width: 360px;
   }
 
   @include breakpoint($x-large) {
-    max-width: 360px;
+    max-width: 420px;
   }
 }
 
@@ -132,8 +132,8 @@
 }
 
 .home-page .sidebar .author__avatar img {
-  max-width: 260px;
-  padding: 10px;
+  max-width: 320px;
+  padding: 12px;
 }
 
 .home-page .sidebar .author__content {
