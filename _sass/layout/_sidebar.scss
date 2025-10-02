@@ -149,7 +149,7 @@
 }
 
 .home-page .sidebar .author__bio {
-  font-size: $type-size-5;
+  font-size: $type-size-4;
   line-height: 1.5;
   margin-bottom: 0.35rem;
 }
@@ -178,6 +178,7 @@
 
 .home-page .sidebar .author__urls li {
   margin: 0.35rem 0;
+  font-size: $type-size-4;
 }
 
 .home-page .sidebar .author__urls a {
@@ -197,6 +198,10 @@
   .home-page .sidebar .author__urls a {
     font-size: $type-size-4;
     font-weight: 500;
+  }
+
+  .home-page .sidebar .author__urls li {
+    font-size: $type-size-4;
   }
 }
 
