@@ -56,7 +56,7 @@
 
   @include breakpoint($large) {
     flex-direction: row;
-    align-items: stretch;
+    align-items: flex-start;
     justify-content: center;
     gap: 4.5rem;
     max-width: 1240px;
@@ -98,8 +98,8 @@
 
 .home-page .page__content {
   text-align: left;
-  font-size: clamp(0.88rem, 1.1vw, 1.05rem);
-  line-height: 1.55;
+  font-size: clamp(0.92rem, 1.2vw, 1.1rem);
+  line-height: 1.6;
   max-width: none;
 }
 

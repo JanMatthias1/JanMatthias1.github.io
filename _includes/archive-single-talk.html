@@ -25,13 +25,7 @@
           alt="">
       </div>
     {% endif %}
-    <h2 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a>
-      {% else %}
-        {{ title }}
-      {% endif %}
-    </h2>
+    <h2 class="archive__item-title" itemprop="headline">{{ title }}</h2>
     {% assign has_meta = post.venue or post.location or post.date %}
     {% if has_meta %}
       <p class="archive__item-meta">

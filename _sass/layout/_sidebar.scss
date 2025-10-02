@@ -119,6 +119,7 @@
   @include breakpoint($large) {
     float: none;
     max-width: 360px;
+    margin-top: -2rem;
   }
 
   @include breakpoint($x-large) {
