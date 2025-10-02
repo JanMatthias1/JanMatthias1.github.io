@@ -49,12 +49,10 @@
 }
 
 .home-page #main {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
   padding: 3.5rem 1.75rem 4rem;
 
   @include breakpoint($large) {
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
@@ -66,8 +64,6 @@
 }
 
 .home-page #main .sidebar {
-  flex: 0 0 auto;
-
   @include breakpoint($large) {
     order: 2;
     flex: 0 0 400px;
@@ -80,8 +76,6 @@
 
 
 .home-page #main .page {
-  width: 100%;
-
   @include breakpoint($large) {
     order: 1;
     max-width: none;
