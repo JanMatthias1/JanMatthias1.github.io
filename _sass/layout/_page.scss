@@ -97,12 +97,12 @@
 
 .home-page .page__content {
   text-align: left;
-  font-size: clamp(1.18rem, 1.6vw, 1.38rem);
-  line-height: 1.95;
+  font-size: clamp(1.12rem, 1.5vw, 1.32rem);
+  line-height: 1.75;
 }
 
 .home-page .page__content p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .page__content {
@@ -168,7 +168,8 @@
     padding-bottom: 2rem;
     text-align: center;
     color: var(--body-muted-text);
-    font-size: $type-size-6;
+    font-size: $type-size-5;
+    letter-spacing: 0.02em;
   }
 }
 
