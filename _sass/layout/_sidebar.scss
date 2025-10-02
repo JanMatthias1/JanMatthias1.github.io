@@ -133,7 +133,7 @@
 }
 
 .home-page .sidebar .author__avatar img {
-  max-width: min(70vw, 256px);
+  max-width: clamp(160px, 60vw, 256px);
   padding: 10px;
 }
 
