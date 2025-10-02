@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Jan Matthias"
   pronouns         : # example: "she/her"  
-  bio              : "1st Year PhD student at the Johns Hopkins University  "
+  bio              : "PhD student at the Johns Hopkins University"
   location         : "Baltimore"
   employer         : "Johns Hopkins University"
   uri              : # URL
@@ -63,7 +63,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "www.linkedin.com/in/janmatthias"
+  linkedin         : "janmatthias"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
