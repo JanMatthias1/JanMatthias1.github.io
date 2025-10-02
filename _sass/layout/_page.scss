@@ -79,13 +79,13 @@
 
   @include breakpoint($large) {
     max-width: none;
-    flex: 1 1 4000px;
+    flex: 1 1 auto;
     min-width: 0;
   }
 }
 
 .home-page .page__inner-wrap {
-  max-width: none;
+  max-width: 68rem;
   margin: 0;
   padding: 0;
 }
