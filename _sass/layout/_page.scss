@@ -79,7 +79,7 @@
 
   @include breakpoint($large) {
     max-width: none;
-    flex: 1 1 1200px;
+    flex: 1 1 1320px;
     min-width: 0;
   }
 }
@@ -92,14 +92,14 @@
 
 .home-page .page__title {
   text-align: left;
-  font-size: clamp(1.6rem, 3.2vw, 2.08rem);
-  margin-bottom: 1.2rem;
+  font-size: clamp(1.76rem, 3.5vw, 2.29rem);
+  margin-bottom: 1.3rem;
 }
 
 .home-page .page__content {
   text-align: left;
-  font-size: clamp(0.8rem, 1vw, 0.95rem);
-  line-height: 1.5;
+  font-size: clamp(0.88rem, 1.1vw, 1.05rem);
+  line-height: 1.55;
   max-width: none;
 }
 
@@ -115,9 +115,9 @@
   }
 
   .page__authors {
-    margin: 0 0 1rem;
-    font-size: $type-size-6;
-    color: var(--body-muted-text);
+    margin: 0 0 1.25rem;
+    font-size: 1em;
+    color: var(--global-text-color);
   }
 
   p, li, dl {

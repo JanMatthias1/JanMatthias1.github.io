@@ -132,8 +132,8 @@
 }
 
 .home-page .sidebar .author__avatar img {
-  max-width: 320px;
-  padding: 12px;
+  max-width: 256px;
+  padding: 10px;
 }
 
 .home-page .sidebar .author__content {
@@ -144,7 +144,7 @@
 }
 
 .home-page .sidebar .author__name {
-  font-size: $type-size-3;
+  font-size: $type-size-4;
 }
 
 .home-page .sidebar .author__bio {
@@ -169,8 +169,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.35rem;
-  margin-top: 0.6rem;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
   list-style: none;
   padding: 0;
 }
@@ -180,7 +180,7 @@
 }
 
 .home-page .sidebar .author__urls a {
-  font-size: $type-size-5;
+  font-size: $type-size-6;
 }
 
 .author__content {
