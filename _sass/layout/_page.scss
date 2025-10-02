@@ -71,7 +71,7 @@
 
   @include breakpoint($large) {
     flex: 0 0 400px;
-    margin-top: 6rem;
+    margin-top: 2rem;
   }
 }
 .home-page .sidebar {
@@ -87,7 +87,7 @@
     max-width: none;
     flex: 1 1 auto;
     min-width: 0;
-    margin: 6rem 0 0;
+    margin: 2rem 0 0;
   }
 }
 
