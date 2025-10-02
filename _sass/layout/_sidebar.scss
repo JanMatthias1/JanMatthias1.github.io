@@ -152,6 +152,7 @@
   font-size: $type-size-5;
   line-height: 1.5;
   margin-bottom: 0.35rem;
+  font-weight: 500;
 }
 
 .home-page .sidebar .author__urls-wrapper {
@@ -178,12 +179,13 @@
 
 .home-page .sidebar .author__urls li {
   margin: 0.3rem 0;
-  font-size: $type-size-6;
+  font-size: $type-size-4;
+  font-weight: 500;
 }
 
 .home-page .sidebar .author__urls a {
-  font-size: $type-size-6;
-  font-weight: 500;
+  font-size: $type-size-4;
+  font-weight: inherit;
 }
 
 @include breakpoint($large) {
@@ -196,12 +198,13 @@
   }
 
   .home-page .sidebar .author__urls a {
-    font-size: $type-size-6;
-    font-weight: 500;
+    font-size: $type-size-4;
+    font-weight: inherit;
   }
 
   .home-page .sidebar .author__urls li {
-    font-size: $type-size-6;
+    font-size: $type-size-4;
+    font-weight: 500;
   }
 }
 
