@@ -177,11 +177,12 @@
 }
 
 .home-page .sidebar .author__urls li {
-  margin: 0.2rem 0;
+  margin: 0.35rem 0;
 }
 
 .home-page .sidebar .author__urls a {
-  font-size: $type-size-5;
+  font-size: $type-size-4;
+  font-weight: 500;
 }
 
 @include breakpoint($large) {
@@ -194,7 +195,8 @@
   }
 
   .home-page .sidebar .author__urls a {
-    font-size: $type-size-6;
+    font-size: $type-size-4;
+    font-weight: 500;
   }
 }
 
